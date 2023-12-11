@@ -1,208 +1,153 @@
+
+
+.perovskite-logo {
+    width: 40px;
+    height: 40px;
+    
+   /* filter: grayscale(100%);
+    animation: spin 4s linear infinite;
+     Establece la animación llamada 'spin' */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        /* La rotación inicial */
+    }
+
+    100% {
+        transform: rotate(360deg);
+        /* La rotación completa (360 grados) */
+    }
+}
+
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.col {
+   
+    flex: 1;
+    text-align: center;
+    
+}
+
+
 .first-segment {
-    background-color: #e5e5e5;
+    background-image: url('../css/perovskite-background.png');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la columna */
+    background-position: center; /* Ajusta la posición de la imagen */    
+    padding: 20px; /* Agrega espacio interno para mejorar la legibilidad */
+   /*background-color: #f4f4f4;*/
+    
+
+
+
 }
 
 .mainTitle {
-    font-size: 40px;
+    font-size: 100px;
+    text-align: center;
+
 }
 
-.btn {
-    height: 4em;
-    width: 12em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: transparent;
-    border: 0px solid black;
-  }
-  
-  .wrapper {
-    height: 2em;
-    width: 8em;
-    position: relative;
-    background: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .text {
-    font-size: 17px;
-    z-index: 1;
-    color: #000;
-    padding: 4px 12px;
-    border-radius: 4px;
-    background: rgba(255, 255, 255, 0.7);
-    transition: all 0.5s ease;
-  }
-  
-  .flower {
-    display: grid;
-    grid-template-columns: 1em 1em;
-    position: absolute;
-    transition: grid-template-columns 0.8s ease;
-  }
-  
-  .flower1 {
-    top: -12px;
-    left: -13px;
-    transform: rotate(5deg);
-  }
-  
-  .flower2 {
-    bottom: -5px;
-    left: 8px;
-    transform: rotate(35deg);
-  }
-  
-  .flower3 {
-    bottom: -15px;
-    transform: rotate(0deg);
-  }
-  
-  .flower4 {
-    top: -14px;
-    transform: rotate(15deg);
-  }
-  
-  .flower5 {
-    right: 11px;
-    top: -3px;
-    transform: rotate(25deg);
-  }
-  
-  .flower6 {
-    right: -15px;
-    bottom: -15px;
-    transform: rotate(30deg);
-  }
-  
-  .petal {
-    height: 1em;
-    width: 1em;
-    border-radius: 40% 70% / 7% 90%;
-    background: linear-gradient(#d70718, #ee93c5);
-    border: 0.5px solid #d496ec;
-    z-index: 0;
-    transition: width 0.8s ease, height 0.8s ease;
-  }
-  
-  .two {
-    transform: rotate(90deg);
-  }
-  
-  .three {
-    transform: rotate(270deg);
-  }
-  
-  .four {
-    transform: rotate(180deg);
-  }
-  
-  .btn:hover .petal {
-    background: linear-gradient(#d70718, #ee93c5);
-    border: 0.5px solid #d496ec;
-  }
-  
-  .btn:hover .flower {
-    grid-template-columns: 1.5em 1.5em;
-  }
-  
-  .btn:hover .flower .petal {
-    width: 1.5em;
-    height: 1.5em;
-  }
-  
-  .btn:hover .text {
-    background: rgba(255, 255, 255, 0.4);
-  }
-  
-  .btn:hover div.flower1 {
-    animation: 15s linear 0s normal none infinite running flower1;
-  }
-  
-  @keyframes flower1 {
-    0% {
-      transform: rotate(5deg);
-    }
-  
-    100% {
-      transform: rotate(365deg);
-    }
-  }
-  
-  .btn:hover div.flower2 {
-    animation: 13s linear 1s normal none infinite running flower2;
-  }
-  
-  @keyframes flower2 {
-    0% {
-      transform: rotate(35deg);
-    }
-  
-    100% {
-      transform: rotate(-325deg);
-    }
-  }
-  
-  .btn:hover div.flower3 {
-    animation: 16s linear 1s normal none infinite running flower3;
-  }
-  
-  @keyframes flower3 {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  .btn:hover div.flower4 {
-    animation: 17s linear 1s normal none infinite running flower4;
-  }
-  
-  @keyframes flower4 {
-    0% {
-      transform: rotate(15deg);
-    }
-  
-    100% {
-      transform: rotate(375deg);
-    }
-  }
-  
-  .btn:hover div.flower5 {
-    animation: 20s linear 1s normal none infinite running flower5;
-  }
-  
-  @keyframes flower5 {
-    0% {
-      transform: rotate(25deg);
-    }
-  
-    100% {
-      transform: rotate(-335deg);
-    }
-  }
-  
-  .btn:hover div.flower6 {
-    animation: 15s linear 1s normal none infinite running flower6;
-  }
-  
-  @keyframes flower6 {
-    0% {
-      transform: rotate(30deg);
-    }
-  
-    100% {
-      transform: rotate(390deg);
-    }
-  }
+.image1 {
+    float: right;
+    margin-right: 10px;
+    width: 100%;
+    height: 650px;
+
+}
+
+.perovskite-right {
+    max-width: 100%; /* Ajusta el ancho máximo según tus necesidades */
+    height: auto;   /* Permite que la altura se ajuste automáticamente para mantener la proporción original */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation: spin 6s linear infinite;
+    width: 60%;
+    
+
+}
+
+.perovskite-left {
+    max-width: 100%; /* Ajusta el ancho máximo según tus necesidades */
+    height: auto;   /* Permite que la altura se ajuste automáticamente para mantener la proporción original */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation: spin 6s linear infinite;
+    width: 60%;
+    
+
+}
 
 
-  /* Switch starts here */
+
+
+
+
+
+.second-segment {
+    background-color: #5BD3B7;
+    text-align: center;
+
+
+}
+
+.sub-text {
+    font-size: 60px;
+    margin: 0;
+    text-align: justify;
+}
+
+.image2 {
+    float: left;
+    margin-left: 10px;
+    width: 100%;
+    height: 500px;
+
+}
+
+
+
+.third-segment {
+    /* background-color: #f4f4f4;*/
+
+
+}
+
+.map {}
+
+
+.fourth-segment {
+    background-color: #0B6380;
+
+
+}
+
+.fifth-segment {
+    background-color: #f4f4f4;
+
+
+
+}
+
+.sixth-segment {
+    background-color: #F878CD;
+
+
+
+}
+
+
+
+
+
+/* Switch starts here */
 .rocker {
     display: inline-block;
     position: relative;
@@ -223,15 +168,15 @@
     height: 4em;
     overflow: hidden;
     border-bottom: 0.5em solid #eee;
-  }
-  
-  .rocker-small {
+}
+
+.rocker-small {
     font-size: 0.75em;
-   /* Sizes the switch */
+    /* Sizes the switch */
     margin: 1em;
-  }
-  
-  .rocker::before {
+}
+
+.rocker::before {
     content: "";
     position: absolute;
     top: 0.5em;
@@ -241,16 +186,16 @@
     background-color: #999;
     border: 0.5em solid #eee;
     border-bottom: 0;
-  }
-  
-  .rocker input {
+}
+
+.rocker input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  
-  .switch-left,
-  .switch-right {
+}
+
+.switch-left,
+.switch-right {
     cursor: pointer;
     position: absolute;
     display: flex;
@@ -260,26 +205,26 @@
     width: 3em;
     transition: 0.2s;
     user-select: none;
-  }
-  
-  .switch-left {
+}
+
+.switch-left {
     height: 2.4em;
     width: 2.75em;
     left: 0.85em;
     bottom: 0.4em;
     background-color: #ddd;
     transform: rotate(15deg) skewX(15deg);
-  }
-  
-  .switch-right {
+}
+
+.switch-right {
     right: 0.5em;
     bottom: 0;
     background-color: #bd5757;
     color: #fff;
-  }
-  
-  .switch-left::before,
-  .switch-right::before {
+}
+
+.switch-left::before,
+.switch-right::before {
     content: "";
     position: absolute;
     width: 0.4em;
@@ -287,19 +232,19 @@
     bottom: -0.45em;
     background-color: #ccc;
     transform: skewY(-65deg);
-  }
-  
-  .switch-left::before {
+}
+
+.switch-left::before {
     left: -0.4em;
-  }
-  
-  .switch-right::before {
+}
+
+.switch-right::before {
     right: -0.375em;
     background-color: transparent;
     transform: skewY(65deg);
-  }
-  
-  input:checked + .switch-left {
+}
+
+input:checked+.switch-left {
     background-color: #0084d0;
     color: #fff;
     bottom: 0px;
@@ -307,14 +252,14 @@
     height: 2.5em;
     width: 3em;
     transform: rotate(0deg) skewX(0deg);
-  }
-  
-  input:checked + .switch-left::before {
+}
+
+input:checked+.switch-left::before {
     background-color: transparent;
     width: 3.0833em;
-  }
-  
-  input:checked + .switch-left + .switch-right {
+}
+
+input:checked+.switch-left+.switch-right {
     background-color: #ddd;
     color: #888;
     bottom: 0.4em;
@@ -322,25 +267,68 @@
     height: 2.4em;
     width: 2.75em;
     transform: rotate(-15deg) skewX(-15deg);
-  }
-  
-  input:checked + .switch-left + .switch-right::before {
+}
+
+input:checked+.switch-left+.switch-right::before {
     background-color: #ccc;
-  }
-  
-  /* Keyboard Users */
-  input:focus + .switch-left {
+}
+
+/* Keyboard Users */
+input:focus+.switch-left {
     color: #333;
-  }
-  
-  input:checked:focus + .switch-left {
+}
+
+input:checked:focus+.switch-left {
     color: #fff;
-  }
-  
-  input:focus + .switch-left + .switch-right {
+}
+
+input:focus+.switch-left+.switch-right {
     color: #fff;
-  }
-  
-  input:checked:focus + .switch-left + .switch-right {
+}
+
+input:checked:focus+.switch-left+.switch-right {
     color: #333;
-  }
+}
+
+
+
+
+
+.btn-learn-more {
+    width: 6.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+   }
+   
+   button:hover {
+    color: black;
+   }
+   
+   button:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+   
+   button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+   }
