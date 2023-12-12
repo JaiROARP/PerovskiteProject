@@ -93,6 +93,7 @@
 
 .second-segment {
     background-color: #5BD3B7;
+    color: #f4f4f4;
     text-align: center;
 
 
@@ -100,33 +101,67 @@
 
 .sub-text {
     font-size: 60px;
-    margin: 0;
+    margin-top: 20px;
+    text-align: center;
+    color: #f4f4f4;
+}
+
+p {
     text-align: justify;
+    font-size: 25px;
+    margin: 3pc;
 }
 
 .image2 {
-    float: left;
-    margin-left: 10px;
-    width: 100%;
-    height: 500px;
+    float: center;
+    /*margin-left: 10px;*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    height: 700px;
+    transition: transform 0.3s ease; /* Agregamos una transición suave de 0.3 segundos al efecto de zoom */
+}
 
+.image2:hover {
+    transform: scale(1.1); /* Hacemos un zoom del 10% (1.1 veces el tamaño original) al pasar el ratón sobre la imagen */
 }
 
 
 
 .third-segment {
-    /* background-color: #f4f4f4;*/
-
-
+    
 }
 
-.map {}
+
+
+
+.map-container {
+    background-color: #F878CD; /* Color rosa para el fondo */
+    padding: 10px; /* Ajusta el relleno según tus necesidades */
+    border-radius: 15px; /* Ajusta el radio de borde según tus necesidades */
+    width: 80%;
+    margin: 3pc;
+}
+
+.map {
+    
+   width: 95%;   
+   height: 500px;
+   
+}
+
+
+
+
 
 
 .fourth-segment {
     background-color: #0B6380;
-
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ajusta la altura según tus necesidades, 100vh ocupa el 100% de la altura de la ventana gráfica */
+    color: #fff; /* Ajusta el color del texto para que sea legible en el fondo */
 }
 
 .fifth-segment {
