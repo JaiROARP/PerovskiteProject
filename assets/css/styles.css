@@ -1,10 +1,8 @@
-
-
 .perovskite-logo {
     width: 40px;
     height: 40px;
-    
-   /* filter: grayscale(100%);
+
+    /* filter: grayscale(100%);
     animation: spin 4s linear infinite;
      Establece la animación llamada 'spin' */
 }
@@ -28,20 +26,23 @@
 }
 
 .col {
-   
+
     flex: 1;
     text-align: center;
-    
+
 }
 
 
 .first-segment {
     background-image: url('../css/perovskite-background.png');
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la columna */
-    background-position: center; /* Ajusta la posición de la imagen */    
-    padding: 20px; /* Agrega espacio interno para mejorar la legibilidad */
-   /*background-color: #f4f4f4;*/
-    
+    background-size: cover;
+    /* Ajusta el tamaño de la imagen para cubrir toda la columna */
+    background-position: center;
+    /* Ajusta la posición de la imagen */
+    padding: 20px;
+    /* Agrega espacio interno para mejorar la legibilidad */
+    /*background-color: #f4f4f4;*/
+
 
 
 
@@ -62,27 +63,72 @@
 }
 
 .perovskite-right {
-    max-width: 100%; /* Ajusta el ancho máximo según tus necesidades */
-    height: auto;   /* Permite que la altura se ajuste automáticamente para mantener la proporción original */
+    max-width: 100%;
+    /* Ajusta el ancho máximo según tus necesidades */
+    height: auto;
+    /* Permite que la altura se ajuste automáticamente para mantener la proporción original */
     display: block;
     margin-left: auto;
     margin-right: auto;
     animation: spin 6s linear infinite;
-    width: 60%;
-    
+    width: 50%;
+
 
 }
 
 .perovskite-left {
-    max-width: 100%; /* Ajusta el ancho máximo según tus necesidades */
-    height: auto;   /* Permite que la altura se ajuste automáticamente para mantener la proporción original */
+    max-width: 100%;
+    /* Ajusta el ancho máximo según tus necesidades */
+    height: auto;
+    /* Permite que la altura se ajuste automáticamente para mantener la proporción original */
     display: block;
     margin-left: auto;
     margin-right: auto;
     animation: spin 6s linear infinite;
-    width: 60%;
-    
+    width: 50%;
 
+
+}
+
+
+
+.btn-learn-more {
+    width: 10em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+button:hover {
+    color: black;
+}
+
+button:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 
@@ -119,35 +165,62 @@ p {
     margin-right: auto;
     width: 85%;
     height: 700px;
-    transition: transform 0.3s ease; /* Agregamos una transición suave de 0.3 segundos al efecto de zoom */
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* Agregamos una transición suave de 0.3 segundos al efecto de zoom */
 }
 
 .image2:hover {
-    transform: scale(1.1); /* Hacemos un zoom del 10% (1.1 veces el tamaño original) al pasar el ratón sobre la imagen */
+    transform: scale(1.1);
+    /* Hacemos un zoom del 10% (1.1 veces el tamaño original) al pasar el ratón sobre la imagen */
 }
 
 
 
-.third-segment {
-    
-}
+.third-segment {}
 
+.container-pattern {
+    width: 100%;
+    height: 100%;
+    --s: 82px;
+    --c1: #b2b2b2;
+    --c2: #ffffff;
+    --c3: #d9d9d9;
+
+    --_g: var(--c3) 0 120deg, #0000 0;
+    background: conic-gradient(from -60deg at 50% calc(100% / 3), var(--_g)),
+        conic-gradient(from 120deg at 50% calc(200% / 3), var(--_g)),
+        conic-gradient(from 60deg at calc(200% / 3),
+            var(--c3) 60deg,
+            var(--c2) 0 120deg,
+            #0000 0),
+        conic-gradient(from 180deg at calc(100% / 3), var(--c1) 60deg, var(--_g)),
+        linear-gradient(90deg,
+            var(--c1) calc(100% / 6),
+            var(--c2) 0 50%,
+            var(--c1) 0 calc(500% / 6),
+            var(--c2) 0);
+    background-size: calc(1.732 * var(--s)) var(--s);
+}
 
 
 
 .map-container {
-    background-color: #F878CD; /* Color rosa para el fondo */
-    padding: 10px; /* Ajusta el relleno según tus necesidades */
-    border-radius: 15px; /* Ajusta el radio de borde según tus necesidades */
+    background-color: #F878CD;
+    /* Color rosa para el fondo */
+    padding: 10px;
+    /* Ajusta el relleno según tus necesidades */
+    border-radius: 15px;
+    /* Ajusta el radio de borde según tus necesidades */
     width: 80%;
     margin: 3pc;
 }
 
 .map {
-    
-   width: 95%;   
-   height: 500px;
-   
+
+    width: 95%;
+    height: 500px;
+
 }
 
 
@@ -160,9 +233,60 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Ajusta la altura según tus necesidades, 100vh ocupa el 100% de la altura de la ventana gráfica */
-    color: #fff; /* Ajusta el color del texto para que sea legible en el fondo */
+    height: 100vh;
+    /* Ajusta la altura según tus necesidades, 100vh ocupa el 100% de la altura de la ventana gráfica */
+    color: #fff;
+    /* Ajusta el color del texto para que sea legible en el fondo */
 }
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    border: solid black 2px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #b2b2b2;
+}
+
+.speakers {
+    width: 90%;
+    height: 300px;
+    margin-top: 1pc;
+    border-radius: 50%;
+    border: solid black 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+.title {
+    color: grey;
+    font-size: 20px;
+    text-align: center;
+}
+
+.college {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
 
 .fifth-segment {
     background-color: #f4f4f4;
@@ -172,10 +296,41 @@ p {
 }
 
 .sixth-segment {
+    border: solid black 5px;
+    background-image: url('../css/perovskite.png');
     background-color: #F878CD;
+    background-position: center; /* Centra la imagen en el eje horizontal y vertical */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size:contain; /* Ajusta la imagen para cubrir completamente el contenedor */
+    
+}
 
 
 
+
+
+.collage {
+    width: 800px;
+    transition: transform 0.3s ease;
+    opacity: 1;
+    margin-bottom: 2pc;
+    
+}
+
+.collage:hover {
+    transform: scale(1.1);
+    opacity: 2;    
+}
+
+.lista {
+    color: #000;
+    text-align: left;
+    font-size: 40px;
+
+}
+
+.container-6th {
+    background-image: url('../css/perovskite.png');
 }
 
 
@@ -324,46 +479,3 @@ input:focus+.switch-left+.switch-right {
 input:checked:focus+.switch-left+.switch-right {
     color: #333;
 }
-
-
-
-
-
-.btn-learn-more {
-    width: 6.5em;
-    height: 2.3em;
-    margin: 0.5em;
-    background: black;
-    color: white;
-    border: none;
-    border-radius: 0.625em;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-   }
-   
-   button:hover {
-    color: black;
-   }
-   
-   button:after {
-    content: "";
-    background: white;
-    position: absolute;
-    z-index: -1;
-    left: -20%;
-    right: -20%;
-    top: 0;
-    bottom: 0;
-    transform: skewX(-45deg) scale(0, 1);
-    transition: all 0.5s;
-   }
-   
-   button:hover:after {
-    transform: skewX(-45deg) scale(1, 1);
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-   }
