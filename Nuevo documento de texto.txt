@@ -1,0 +1,13 @@
+titulos: telegraf
+texto: garet
+
+- achicar espacios entre las fechas y el titulo del encuentro
+- cambiar la forma de las imagenes, posiblemente redondas, formas abstractas (mirar ejemplos en canvas)
+- imagenes de speaker sin bordes (fijarse en canva)
+- nombre y U de speakers en Garet
+- Cambiar titulo de Speaker a Professor(Prof)
+- cambiar color del fondo labo a #f8c954
+- cambiar las perovskitas del os integrantes del labo por bullet points
+- ajustar textos a los tipos de letra asignados 
+- ajustar textos de pc a %
+- color negro (#2E2E2E)

@@ -332,12 +332,9 @@ p {
 
 
 .sixth-segment {
-    border: solid black 5px;
-    background-image: url('../css/perovskite.png');
-    background-color: #F878CD;
-    background-position: center; /* Centra la imagen en el eje horizontal y vertical */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-size:contain; /* Ajusta la imagen para cubrir completamente el contenedor */
+    border: solid black 5px;    
+    background-color: #f8c954;
+
     
 }
 
@@ -359,15 +356,13 @@ p {
 }
 
 .lista {
-    color: #000;
+    color: white;
     text-align: left;
     font-size: 40px;
 
 }
 
-.container-6th {
-    background-image: url('../css/perovskite.png');
-}
+
 
 
 
