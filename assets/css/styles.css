@@ -65,9 +65,11 @@ p {
 }
 
 .mainTitle {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 5vw; /* Porcentaje del ancho de la ventana */
-    max-font-size: 100px; /* Tamaño máximo en píxeles */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 5vw;
+    /* Porcentaje del ancho de la ventana */
+    max-font-size: 100px;
+    /* Tamaño máximo en píxeles */
     text-align: center;
 }
 
@@ -182,21 +184,26 @@ button:hover:after {
 }
 
 .image-container {
-    overflow: hidden; /* Evita que la imagen se salga del contenedor */
+    overflow: hidden;
+    /* Evita que la imagen se salga del contenedor */
     width: 85%;
     margin-left: auto;
     margin-right: auto;
-    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
-    
-    border-radius: 10px; /* Ajusta este valor según sea necesario para obtener puntas redondas */
+    max-width: 100%;
+    /* Asegura que la imagen no exceda el ancho del contenedor */
+
+    border-radius: 10px;
+    /* Ajusta este valor según sea necesario para obtener puntas redondas */
 }
 
 .image2 {
     width: 100%;
-    height: auto; /* Para mantener la proporción de aspecto original de la imagen */
+    height: auto;
+    /* Para mantener la proporción de aspecto original de la imagen */
     margin: 2pc;
     transition: transform 0.3s ease;
-    border-radius: 10px; /* Ajusta este valor para obtener puntas redondas */
+    border-radius: 10px;
+    /* Ajusta este valor para obtener puntas redondas */
 }
 
 .image2:hover {
@@ -331,23 +338,40 @@ button:hover:after {
 
 }
 
+.subscribe {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+}
+
 .form {
-    width: 300px;
-    height: 300px;
-    margin-left: 15pc;
+
+    max-width: 100%;
+    height: auto;
+    max-height: 250px;
+    display: flex;
+    margin: auto;
     animation: sacudida 0.5s ease-in-out infinite;
 }
 
+
+
 @keyframes sacudida {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateX(0);
     }
+
     25% {
         transform: translateX(-5px);
     }
+
     50% {
         transform: translateX(5px);
     }
+
     75% {
         transform: translateX(-5px);
     }
@@ -360,10 +384,10 @@ button:hover:after {
 
 
 .sixth-segment {
-    border: solid black 5px;    
+    border: solid black 5px;
     background-color: #f8c954;
 
-    
+
 }
 
 
@@ -375,12 +399,12 @@ button:hover:after {
     transition: transform 0.3s ease;
     opacity: 1;
     margin-bottom: 2pc;
-    
+
 }
 
 .collage:hover {
     transform: scale(1.1);
-    opacity: 2;    
+    opacity: 2;
 }
 
 .lista {
