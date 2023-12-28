@@ -1,5 +1,7 @@
-body {
-    background-color: #000;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -165,17 +167,10 @@ button:hover:after {
     background-color: #5BD3B7;
     color: #f4f4f4;
     text-align: center;
-
+    margin: auto;
 
 }
 
-.sub-text {
-    font-size: 3em;
-    font-weight: bold;
-    margin-top: 20px;
-    text-align: center;
-    color: #f4f4f4;
-}
 
 .p2-segment {
     text-align: justify;
@@ -198,11 +193,11 @@ button:hover:after {
 
 .image2 {
     width: 100%;
-    height: auto;
+    height: 400px;
     /* Para mantener la proporción de aspecto original de la imagen */
     margin: 2pc;
     transition: transform 0.3s ease;
-    border-radius: 10px;
+    border-radius: 10%;
     /* Ajusta este valor para obtener puntas redondas */
 }
 
@@ -275,44 +270,45 @@ button:hover:after {
 
 .fourth-segment {
     background-color: #0B6380;
+    display: flex;    
+}
+
+.card-container {
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 100vh;
-    /* Ajusta la altura según tus necesidades, 100vh ocupa el 100% de la altura de la ventana gráfica */
-    color: #fff;
-    /* Ajusta el color del texto para que sea legible en el fondo */
+    flex-wrap: wrap;
+    margin-top: auto;
 }
 
 
-
-
-.speakers {
-    width: 90%;
-    height: 300px;
-    margin-top: 1pc;
-    border-radius: 50%;
-    border: solid black 2px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    display: flex;
+.card {
+width: 325px;
+background-color: #f0f0f0;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+margin: 20px;
 }
 
-.title {
-    color: grey;
-    font-size: 20px;
-    text-align: center;
-}
-
-.college {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
+.card img {
     width: 100%;
-    font-size: 18px;
+    height: 250px;    
+}
+
+.card-content {
+    padding: 16px;
+    text-align: center;
+}
+
+.card-content h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    color: #2e2e2e;
+    font-size: 20px;
+    line-height: 1.5;
 }
 
 
@@ -331,17 +327,18 @@ button:hover:after {
 .email {
     color: #3498db;
     /* Color del texto */
-    font-size: 30px;
+    font-size: 3.3em;
     /* Tamaño de la letra */
     font-weight: bold;
     /* Peso de la letra (negrita) */
-    text-transform: uppercase;
-    /* Convertir el texto a mayúsculas */
     letter-spacing: 2px;
     /* Espaciado entre letras */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     /* Sombra del texto */
-
+    max-width: 100%; /* Establece un ancho máximo del 100% de su contenedor */
+    box-sizing: border-box; /* Incluye el padding y border en el ancho total */
+    overflow: hidden; /* Evita que el texto sobresalga de la columna */
+    margin-bottom: 1em;
 }
 
 /* Estilos para pantallas más pequeñas (ajusta según sea necesario) */
@@ -406,10 +403,12 @@ button:hover:after {
 
 
 .sixth-segment {
-    border: solid black 5px;
     background-color: #f8c954;
+    margin: auto;
+}
 
-
+.image-container2 {
+    background-color: #f8c954;
 }
 
 .networks {
@@ -423,12 +422,26 @@ button:hover:after {
 
 .labo {
     display: flex;
+  }
+  
+  
+  .labo img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+
+
+
+  .labo2 {
+    display: flex;
     max-width: 100%;
     width: 100%;
     height: auto;
   }
   
-  .labo img {
+  .labo2 img {
     width: 0px;
     max-height: 350px;
     flex-grow: 1;
@@ -436,175 +449,8 @@ button:hover:after {
     transition: .5s ease;
   }
   
-  .labo img:hover {
+  .labo2 img:hover {
     cursor: crosshair;
     width: 400px;    
     filter: contrast(120%);
   }
-
-
-
-
-.collage {
-    width: 800px;
-    transition: transform 0.3s ease;
-    opacity: 1;
-    margin-bottom: 2pc;
-
-}
-
-.collage:hover {
-    transform: scale(1.1);
-    opacity: 2;
-}
-
-
-
-
-
-
-
-
-
-/* Switch starts here */
-.rocker {
-    display: inline-block;
-    position: relative;
-    /*
-    SIZE OF SWITCH
-    ==============
-    All sizes are in em - therefore
-    changing the font-size here
-    will change the size of the switch.
-    See .rocker-small below as example.
-    */
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    color: #888;
-    width: 7em;
-    height: 4em;
-    overflow: hidden;
-    border-bottom: 0.5em solid #eee;
-}
-
-.rocker-small {
-    font-size: 0.75em;
-    /* Sizes the switch */
-    margin: 1em;
-}
-
-.rocker::before {
-    content: "";
-    position: absolute;
-    top: 0.5em;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #999;
-    border: 0.5em solid #eee;
-    border-bottom: 0;
-}
-
-.rocker input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.switch-left,
-.switch-right {
-    cursor: pointer;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2.5em;
-    width: 3em;
-    transition: 0.2s;
-    user-select: none;
-}
-
-.switch-left {
-    height: 2.4em;
-    width: 2.75em;
-    left: 0.85em;
-    bottom: 0.4em;
-    background-color: #ddd;
-    transform: rotate(15deg) skewX(15deg);
-}
-
-.switch-right {
-    right: 0.5em;
-    bottom: 0;
-    background-color: #bd5757;
-    color: #fff;
-}
-
-.switch-left::before,
-.switch-right::before {
-    content: "";
-    position: absolute;
-    width: 0.4em;
-    height: 2.45em;
-    bottom: -0.45em;
-    background-color: #ccc;
-    transform: skewY(-65deg);
-}
-
-.switch-left::before {
-    left: -0.4em;
-}
-
-.switch-right::before {
-    right: -0.375em;
-    background-color: transparent;
-    transform: skewY(65deg);
-}
-
-input:checked+.switch-left {
-    background-color: #0084d0;
-    color: #fff;
-    bottom: 0px;
-    left: 0.5em;
-    height: 2.5em;
-    width: 3em;
-    transform: rotate(0deg) skewX(0deg);
-}
-
-input:checked+.switch-left::before {
-    background-color: transparent;
-    width: 3.0833em;
-}
-
-input:checked+.switch-left+.switch-right {
-    background-color: #ddd;
-    color: #888;
-    bottom: 0.4em;
-    right: 0.8em;
-    height: 2.4em;
-    width: 2.75em;
-    transform: rotate(-15deg) skewX(-15deg);
-}
-
-input:checked+.switch-left+.switch-right::before {
-    background-color: #ccc;
-}
-
-/* Keyboard Users */
-input:focus+.switch-left {
-    color: #333;
-}
-
-input:checked:focus+.switch-left {
-    color: #fff;
-}
-
-input:focus+.switch-left+.switch-right {
-    color: #fff;
-}
-
-input:checked:focus+.switch-left+.switch-right {
-    color: #333;
-}
