@@ -17,13 +17,13 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 
 
-
+  <script src="assets/js/scripts.js"></script>
 </head>
 
 
 <body>
 
-  <div class="container-fluid">
+  <div class="container-fluid-nav">
     <div class="row">
       <div class="col">
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom bg-dark text-white m-0"
@@ -31,18 +31,27 @@
           <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
             <img src="static/perovskite-logo.png" alt="perovskite-logo" class="perovskite-logo">
             <span class="fs-4">MATERIALES APLICADOS A CELDAS SOLARES DE PEROVSKITAS</span>
+            <img src="static/perovskite-logo.png" alt="perovskite-logo" class="perovskite-logo">
           </a>
 
-          <ul class="nav nav-pills">
+          <ul class="nav nav-pills align-items-center">
             <li class="nav-item"><a href="#fifth-segment" class="nav-link active" aria-current="page">Registrate</a>
             </li>
-            <li class="nav-item"><a href="#third-segment" class="nav-link">¿Como llegar?</a></li>
+            <li class="nav-item"><a href="#third-segment" class="nav-link">¿Cómo llegar?</a></li>
             <li class="nav-item"><a href="#fourth-segment" class="nav-link">Expositores</a></li>
-            <li class="nav-item"><label class="rocker rocker-small">
-                <input type="checkbox">
-                <span class="switch-left">ESP</span>
-                <span class="switch-right">ENG</span>
-              </label></li>
+            <li class="nav-item"><a href="#" class="nav-link">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-secondary active">
+                    Idioma
+                  </label>
+                  <label class="btn btn-secondary" onclick="indexESP()">
+                     ESP
+                  </label>
+                  <label class="btn btn-secondary" onclick="indexENG()">
+                     ENG
+                  </label>
+                </div>
+            </li>
           </ul>
         </header>
       </div>
@@ -66,7 +75,7 @@
             </h1>
             <h1>
 
-              <strong>Del 28 Feb al 03 Mar</strong>
+              <strong>28 Febrero al 03 Marzo</strong>
 
             </h1>
             <h3>
@@ -95,14 +104,17 @@
       </div>
 
       <div class="row">
-        <div class="col">
-          <img src="static/perovskite2.png" class="perovskite-left">
+        <div class="col">          
+          <a href="#first-segment">
+            <img src="static/perovskite2.png" class="perovskite-left">
+          </a>
         </div>
         <div class="col">
           <a href="#sixth-segment">
             <button class="btn-learn-more"> Más información
             </button>
           </a>
+
         </div>
         <div class="col">
           <img src="static/perovskite4.png" class="perovskite-right">
@@ -129,13 +141,16 @@
         <div class="col-xl-6 col-lg-6">
           <p
             style="text-align: justify; font-size: 1.8em; margin-left: 1pc; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
-            Segunda edición del encuentro con participación federal. <br><br>
+            <span style="font-weight: bold; font-size: 1.6em;">Segunda edición del encuentro con participación
+              federal.</span> <br><br>
             <span style="font-weight: bold;">Objetivo:</span> Convocar a la comunidad científica dedicada en
-            semiconductores de perovskitas híbridas, tanto
-            desde enfoques teóricos como experimentales en las distintas disciplinas que abarcan la temática.
-            Áreas abarcadas: Física, química y ciencia de materiales, con enfoque en ciencia básica y producciones
-            tecnológicas.
-            Celdas solares de perovskita híbrida: Investigación prometedora para energía económica y sostenible.
+            semiconductores de perovskitas híbridas, tanto desde enfoques teóricos como experimentales en las
+            distintas disciplinas que abarcan la temática.<br>
+            <span style="font-weight: bold;">Áreas Abarcadas:</span> Física, química y ciencia de materiales, con
+            enfoque en ciencia básica y producciones
+            tecnológicas. <br>
+            <span style="font-weight: bold;">Celdas Solares de Perovskita Híbrida:</span> Investigación prometedora para
+            energía económica y sostenible.
           </p>
         </div>
         <div class="col-xl-6 col-lg-6">
@@ -193,7 +208,7 @@
 
               <p style="text-align: justify; font-size: 1.60rem;">
 
-                En Febrero del 2020 realizamos el 1er simposio de materiales de perovskitas y celdas solares en el
+                En febrero del 2020 realizamos el 1er simposio de materiales de perovskitas y celdas solares en el
                 Centro Atómico Constituyentes de la CNEA. En esa ocasión tuvimos intercambios académicos con
                 investigadores argentinos y alemanes; como el doctor Kurt Taretto de Neuquén PROBIEN, Javier Schmidt y
                 Federico Ventosinos del IFIS-LITORAL y Yesica Di Iorio y Mariana Berruet del INTEMA. Desde Alemania
@@ -262,7 +277,7 @@
 
         <div class="col-xl-4 col-lg-4">
           <div class="card-container">
-            <div class="card">
+            <div class="special-card">
               <img src="static/Susanta-Kumar-Tripathy.png" alt="Dr. Susanta Kumar Tripathy" class="speaker">
               <div class="card-content">
                 <h3>PROF. SUSANTA KUMAR TRIPATHY</h3>
@@ -334,8 +349,8 @@
           </h5>
           <p class="text-justify" style="margin-left: 1pc;">
             Por favor descarga la plantilla de resumen para que el comité científico valore el mismo.
-            <a href="https://docs.google.com/document/d/1ht-UnT0niJiaUGCKn4amzkWjGEQY0ZbSI7blY6sKD0k/edit"
-              target="_blank">
+            <a id="downloadTemplate" href="templates/Template-2do-Encuentro-de-Materiales-de-Perovskita.docx"
+              download="Template-2do-Encuentro-de-Materiales-de-Perovskita.docx" target="_blank">
               <br>(Plantilla de resumen)
               <img src="static/form2.png" alt="Form" class="form">
             </a>
@@ -545,7 +560,7 @@
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2023 Copyright:
       <a class="text-white" href="https://www.linkedin.com/in/jairoarp91/" target="_blank">
-        DroidDev
+        JaiROARP
       </a>
     </div>
     <!-- Copyright -->
