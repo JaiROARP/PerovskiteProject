@@ -1,3 +1,6 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
 
 h1 {
    /* font-size: 2em;*/
@@ -189,16 +192,18 @@ button:hover:after {
 
 .image2 {
     width: 80%;
-    height: 350px;    
+    height: 250px;    
     margin: auto;
-    transition: transform 0.3s ease;
+    /*transition: transform 0.3s ease; */
     border-radius: 20px;
     
 }
 
+/*
 .image2:hover {
     transform: scale(1.2);
 }
+*/
 
 
 
@@ -253,7 +258,7 @@ button:hover:after {
 
 .cnea-img {
     width: 95%;
-    height: 365px;
+    height: 250px;
     border-radius: 20px;
 }
 
@@ -275,6 +280,27 @@ button:hover:after {
     display: flex;    
 }
 
+
+.slider {
+    display: flex;
+    max-width: 1000px;
+    height: 500px;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;;
+    border-radius: 20px;
+    box-shadow: 0, 0, 0, 0.5;
+}
+
+.slider img {
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+
+}
+
+
+/*
 .card-container {
     display: flex;
     justify-content: center;
@@ -308,6 +334,7 @@ margin: 20px;
     height: 250px;    
 }
 
+
 .card-content {
     padding: 16px;
     text-align: center;
@@ -331,7 +358,7 @@ margin: 20px;
 }
 
 
-
+*/
 
 
 
