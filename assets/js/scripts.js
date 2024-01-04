@@ -22,30 +22,20 @@ function desactivarArrastre(event) {
 }
 
 
+// Slider
+
+document.addEventListener("DOMContentLoaded", function () {
+    const sliderNavLinks = document.querySelectorAll(".slider-nav a");
+    const slider = document.querySelector(".slider");
+
+    sliderNavLinks.forEach((link, index) => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+            slider.scrollLeft = index * slider.offsetWidth;
+        });
+    });
+});
 
 
-let currentIndex = 0;
 
-function showSlide(index) {
-  const slider = document.querySelector('.slider');
-  const slideWidth = document.querySelector('.slider img').clientWidth;
-  slider.style.transform = `translateX(${-index * slideWidth}px)`;
-}
-
-function nextSlide() {
-  const totalSlides = document.querySelectorAll('.slider img').length;
-  currentIndex = (currentIndex + 1) % totalSlides;
-  showSlide(currentIndex);
-}
-
-function prevSlide() {
-  const totalSlides = document.querySelectorAll('.slider img').length;
-  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-  showSlide(currentIndex);
-}
-
-// Auto-play the slider (optional)
-// setInterval(() => {
-// nextSlide();
-// }, 3000);
 
