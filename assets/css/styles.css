@@ -306,7 +306,7 @@ button:hover:after {
 .slider img {
     flex: 1 0 100%;
     scroll-snap-align: start;
-    object-fit: fill; /* Editando esto cambio el tamaño de la img*/
+    object-fit: contain; /* Editando esto cambio el tamaño de la img*/
 }
 
 .slider-nav {
