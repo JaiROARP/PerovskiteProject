@@ -38,19 +38,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // Toggle menu
-// document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
+    
+    const nav = document.querySelector("#nav");
+    const open = document.querySelector("#open");
+    const close = document.querySelector("#close");
+    const pnone = document.querySelector("#pnone");
 
-//     const nav = document.querySelector("#nav");
-//     const abrir = document.querySelector("#abrir");
-//     const cerrar = document.querySelector("#cerrar");
+    open.addEventListener("click", () => {
+        nav.classList.add("visible");
+        pnone.classList.add("pnone");
+    });
 
-//     abrir.addEventListener("click", () => {
-//         nav.classList.add("visible");
-//     });
-
-//     cerrar.addEventListener("click", () => {
-//         nav.classList.remove("visible");
-//     });
-// });
+    close.addEventListener("click", () => {
+        nav.classList.remove("visible");
+        pnone.classList.remove("pnone");
+    });
+});
 
 

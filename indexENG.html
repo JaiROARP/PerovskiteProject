@@ -23,7 +23,7 @@
 
 <body>
 
-    <div class="container-fluid-nav">
+    <!-- <div class="container-fluid-nav">
         <div class="row">
             <div class="col">
                 <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom bg-dark text-white m-0"
@@ -35,7 +35,7 @@
                         <img src="static/perovskite-logo.png" alt="perovskite-logo" class="perovskite-logo">
                     </a>
                     
-                    <!-- EXPERIMENTO MENU HAMBURGUESA
+                     EXPERIMENTO MENU HAMBURGUESA
                     
                     <div>
                         <button class="abrir-menu bg-dark" id="abrir">
@@ -43,10 +43,10 @@
                         </button>
                     </div>
                     
-                     EXPERIMENTO MENU HAMBURGUESA-->
+                     EXPERIMENTO MENU HAMBURGUESA
                     <nav id="nav" class="nav visible">
                     <ul class="nav nav-pills align-items-center">
-                        <!--<button class="cerrar-menu" id="cerrar"><i class="fa-solid fa-x fa-lg"></i></button>-->
+                        <button class="cerrar-menu" id="cerrar"><i class="fa-solid fa-x fa-lg"></i></button>
                         <li class="nav-item"><a href="#fifth-segment" class="nav-link active" aria-current="page">Sign
                                 Up</a>
                         </li>
@@ -71,7 +71,42 @@
                 </header>
             </div>
         </div>
-    </div>
+    </div> -->
+
+
+
+    <header>
+        <div class="logo">
+            <!-- <img src="static/perovskite-logo.png" alt="perovskite-logo" class="perovskite-logo"> -->
+            <span class="fs-4">PEROVSKITES MATERIALS AND SOLAR CELLS</span>
+            <img src="static/perovskite-logo.png" alt="perovskite-logo" class="perovskite-logo">
+        </div>
+        <button id="open"class="open-menu"><i class="fa-solid fa-bars"></i></button>
+        <nav class="nav visible" id="nav">
+            <button class="close-menu" id="close"><i class="fa-solid fa-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="#fifth-segment">Sign Up</a></li>
+                <li><a href="#third-segment">Venue</a></li>
+                <li><a href="#fourth-segment">Speakers</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#"></a>
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                            Language
+                        </label>
+                        <label class="btn btn-secondary" onclick="indexESP()">
+                            ESP
+                        </label>
+                        <label class="btn btn-secondary" onclick="indexENG()">
+                            ENG
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
 
 
     <section id="first-segment">
@@ -102,7 +137,7 @@
                 </div>
 
                 <div class="col">
-                    <img src="static/perovskite3.png" class="perovskite-left">
+                    <img src="static/perovskite3.png" class="perovskite-left-1 pnone" id="pnone">
                 </div>
             </div>
 

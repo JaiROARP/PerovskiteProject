@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   overflow-x: hidden;
@@ -25,8 +31,9 @@ p {
 }
 
 .perovskite-logo {
-  width: 40px;
-  height: 40px;
+  width: 3rem;
+  height: 3rem;
+  padding-left: 0.5rem;
 
   /* filter: grayscale(100%);
     animation: spin 4s linear infinite;
@@ -43,50 +50,110 @@ p {
   text-align: center;
 }
 
+.logo {
+    max-width: 50rem;
+    text-align: center;
+}
+
 header {
   display: flex;
   padding: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1c1c1c;
+  color:#f4f4f4
 }
 
-/*
-.abrir-menu,
-.cerrar-menu {
-  display: none;
-}
-
-@media screen and (max-width: 670px) {
-  .abrir-menu,
-  .cerrar-menu {
-    display: block;
-    border: 0;
-    font-size: 1.25rem;
-    background-color: transparent;
-    position: absolute;
-  }
-
-  .nav {
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  .nav {
+.nav-list {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    row-gap: 1rem;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    padding: 2rem;
-  }
-
-  .nav.visible {
-    opacity: 1;
-    visibility: visible;
-  }
+    list-style-type: none;
+    gap: 1rem;
+    font-size: 1.5rem;
 }
-*/
+
+.nav-list li a {
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+.nav-list li a:hover {
+    color: #f878cd;
+}
+
+.open-menu, .close-menu {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .open-menu {
+        position: relative;
+        top: 0;
+        right: 0;
+        padding: 2rem;
+    }
+    
+    .open-menu, .close-menu {
+        display: block;
+        border: 0;
+        font-size: 2rem;
+        color: #f4f4f4;
+        background-color: transparent;        
+
+    }
+
+    .open-menu:hover, .close-menu:hover {
+        color: #f878cd;
+        
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;  
+
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0; 
+        background-color: #1c1c1c;        
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5); 
+    }   
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #f4f4f4;
+    }
+
+    .perovskite-left-1.pnone {
+        display: none;
+    }
+
+
+
+    }
+
+
+
+
+
 
 #first-segment {
   background-image: url("../css/perovskite-background.png");
@@ -137,6 +204,16 @@ header {
   animation: spin 6s linear infinite;
   width: 50%;
 }
+
+.perovskite-left-1 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation: spin 6s linear infinite;
+    width: 50%;
+  }
 
 @keyframes spin {
   0% {
@@ -318,6 +395,7 @@ button:hover:after {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  scro
   /*  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25); */
   border-radius: 0.5rem;
 }

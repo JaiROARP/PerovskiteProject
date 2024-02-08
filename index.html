@@ -22,12 +22,12 @@
 
 
 <body>
-
+<!--
   <div class="container-fluid-nav">
     <div class="row">
       <div class="col">
         <header class="navbar navbar-expand-lg navbar-dark bg-dark text-white py-3 mb-4 border-bottom"
-          data-bs-theme="dark">
+          data-bs-theme="dark" style="padding: 2rem">
           <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
             <img src="static/perovskite-logo.png" alt="perovskite-logo" class="perovskite-logo">
             <span class="fs-4">MATERIALES APLICADOS A CELDAS SOLARES DE PEROVSKITAS</span>
@@ -66,6 +66,38 @@
       </div>
     </div>
   </div>
+  -->
+
+  <header>
+    <div class="logo">
+      <!-- <img src="static/perovskite-logo.png" alt="perovskite-logo" class="perovskite-logo"> -->
+        <span class="fs-4">MATERIALES APLICADOS A CELDAS SOLARES DE PEROVSKITAS</span>
+        <img src="static/perovskite-logo.png" alt="perovskite-logo" class="perovskite-logo">
+    </div>
+    <button id="open"class="open-menu"><i class="fa-solid fa-bars"></i></button>
+    <nav class="nav visible" id="nav">
+        <button class="close-menu" id="close"><i class="fa-solid fa-x"></i></button>
+        <ul class="nav-list">
+            <li><a href="#fifth-segment">Registrate</a></li>
+            <li><a href="#third-segment">¿Cómo llegar?</a></li>
+            <li><a href="#fourth-segment">Expositores</a></li>
+            <li><a href="#schedule">Programa</a></li>
+            <li><a href="#"></a>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                        Idioma
+                    </label>
+                    <label class="btn btn-secondary" onclick="indexESP()">
+                        ESP
+                    </label>
+                    <label class="btn btn-secondary" onclick="indexENG()">
+                        ENG
+                    </label>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
 
 
   <section id="first-segment">
@@ -96,7 +128,7 @@
         </div>
 
         <div class="col">
-          <img src="static/perovskite3.png" class="perovskite-left">
+          <img src="static/perovskite3.png" class="perovskite-left-1 pnone" id="pnone">
         </div>
       </div>
 
