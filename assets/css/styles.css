@@ -88,6 +88,9 @@ header {
 
     body {
         overflow-x: hidden;
+        margin-right: 0; /* Elimina el margen derecho */
+        padding-right: 0; /* Elimina el relleno derecho */
+        width: 100%; /* Ajusta el ancho al 100% */
     }
 
     .open-menu {

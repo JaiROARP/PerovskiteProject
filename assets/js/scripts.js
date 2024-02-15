@@ -39,11 +39,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Toggle menu
 document.addEventListener("DOMContentLoaded", function() {
-    
     const nav = document.querySelector("#nav");
     const open = document.querySelector("#open");
     const close = document.querySelector("#close");
-    const pnone = document.querySelector("#pnone");
+    const pnone = document.getElementById("pnone");
 
     open.addEventListener("click", () => {
         nav.classList.add("visible");
