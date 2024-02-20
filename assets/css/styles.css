@@ -486,6 +486,31 @@ button:hover:after {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+
+.download-program {
+  align-items: center;
+  display: flex;
+  justify-content: center;  
+  /* text-decoration: none; */
+  font-size: 2.2em;
+  color: black;
+  font-weight: bold;
+  margin: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.download-icon:hover {
+  transition: 1s;  
+  transform: scale(1.2);
+  font-size: 2.3em;
+  color: #f878cd;
+  margin: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
 #fifth-segment {
   background-color: #f4f4f4;
   padding: 50px 20px 50px 20px;
