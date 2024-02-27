@@ -9,6 +9,12 @@ body {
   overflow-x: hidden;
 }
 
+/* header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+} */
+
 h1 {
   /* font-size: 2em;*/
   margin-bottom: 10px;
@@ -643,3 +649,63 @@ button:hover:after {
 /* .schedule-img:hover {
     transform: scale(1.2);
 } */
+
+.joinUs {
+  margin: 2em;
+  text-align: center;
+  box-sizing: border-box;
+
+}
+
+.joinUs h2 {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+.joinUs h3 {
+  margin-top: -10px;
+  line-height: normal;
+}
+
+
+.joinUs p {
+  text-align: center;
+  /* margin-left: 1.5em;
+  margin-right: 1em; */
+}
+
+.joinUs ul {
+  text-align: left;
+  /* margin-left: 3em; */
+  font-size: 1.7em;
+  list-style-type: none;
+  margin: auto;
+  border: 2px solid #000;
+  background-image: linear-gradient(#A770EF, #CF8BF3, #fdb99b);
+  padding: 5px;
+}
+  
+
+
+.li-li {
+  font-size: 0.5em;
+  /* margin-left: -5em; */
+  font-weight: 500;
+  text-align: left;
+  list-style-type:none;
+  margin-left: 10px;  
+  /* border: 2px solid #000 */
+  
+}
+
+
+
